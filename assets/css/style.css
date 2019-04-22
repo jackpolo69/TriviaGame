@@ -1,0 +1,46 @@
+
+
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-size: 16px;
+font-weight: normal;
+color: black;
+text-decoration: none; 
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 25px;
+    background-color: #384252;
+    color: white;
+    padding: 60px;
+    margin-bottom: 55px;
+}
+
+a {
+    border: 1px solid #384252;
+    padding: 10px 25px;
+    color: #384252;
+}
+
+a:hover {
+    background-color: #c95f70;
+    color: white;
+}
+
+.quiz, .summary {
+    display: none;
+}
+
+.answer {
+    cursor: pointer;
+}
+
+
+.selected {
+    background-color: orange;
+}

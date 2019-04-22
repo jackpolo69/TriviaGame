@@ -1,0 +1,85 @@
+//setTimeout(timeUp, 1000 * 56);
+
+//$("#time-left").append("<h2>Time's Up!</h2>");
+//console.log("time is up");
+
+
+
+//$("#start").load(function () {
+
+//whenPageLoads = setStartTime(function () {
+//alert("Alert : Called 1 seconds after the page loads.");
+//}, 1000);
+//});
+
+
+
+//$(document).ready(function () {
+
+    //on click of a start button, load first question
+   // i;
+   // hipHopTrivia = [];
+    //Count;
+
+   // correct = 0;
+   // missed = 0;
+   // attempted = 0;
+
+   // rightAns;
+    //intervalTimer;
+    //delayButtonAlert;
+   // newQuest;
+   // ansAttempt;
+
+    //hipHopTriviaBuild()
+    //i = 0;
+    //$("#new-question").on("click", 'diplayNewQuestion');
+    //Count = 30;
+    //intervalTimer = setInterval(countDown, 1000)
+1. start game with timeer for 56 seconds
+$("#start").load(function() {
+    //  Set the alert's start time to run one second after the function's called.
+    whenPageLoad = setStartTime(function() {
+      alert("Alert: Called 1 seconds after the page loads.");
+    }, 1);
+  });
+  setTimeout(timeUp, 1000 * 56);
+  function timeUp() {
+    // in the element with an id of time-left add an h2 saying Time's Up!
+    // console log done
+    console.log("done");
+    $("#time-left").append("<h2>Time's Up!</h2>");
+    console.log("time is up");
+
+2. user chooses 1 out of 4 of the answers to the questions and Make buttons for each available answer
+
+3. There are 8 questions to be answered in uner 56 seconds.
+
+4. Each correct answer to the question is equal to 5 points (record 5 points to scoreboard). The top score is 40.
+
+5. We will determine if the user wins or not by total score.
+6. Or if time runs out ending the game.
+7. After 8 questions are answered and/or time runs out, we go to the score page.
+8. If user gets 6 or more answers right or 2 or less answers wrong = user wins.
+9. If user gets 5 or less answers right or 3 or more answers wrong = user loses.
+10. unanswered = wrong answer 
+11. we then add to their score
+ 
+If user wins then we add one to their wins.
+If user loses then we add to their loses.
+12. starts game over with random questions out of the 40 total trivia questions.
+<div id = "seconds-count"></div>
+        <div id = "div1" class = "stats"></div>
+        <button class = "btn" id = "new-question">New Question</button>
+        var score = 0;
+        for (var i = 0; i < questions.length; i++) {
+            var responce = window.prompt(questions[i].prompt);
+            if (responce == questions[i].answer) {
+                score++;
+                alert("Correct!");
+            } else {
+                alert("WRONG!");
+            }
+        }
+        alert("you got " + score + "/" + questions.length);
+    
